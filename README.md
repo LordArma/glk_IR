@@ -5,6 +5,5 @@ According to this topic: [Gilaki doesn't exist in launchpad](https://answers.lau
 ### Please also see these:
 * [Gilaki in Launchpad](https://translations.launchpad.net/+languages/glk)
 * [Adding New Language (Ubuntu)](https://wiki.ubuntu.com/Translations/KnowledgeBase/AddingNewLanguage)
-* [Additional functions for plural forms (GNU)](https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html)
 * [Error on test glk_IR with localedef (Sourceware Bugzilla)](https://sourceware.org/bugzilla/show_bug.cgi?id=27163)
 
