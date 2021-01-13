@@ -26,7 +26,7 @@ source     "Jangal, Inc."
 address    "61, Ghasemiye, Beheshti Ave, Rasht, Iran"
 contact    "Alireza M. Ahmadi"
 email      "arma@jangal.co"
-tel        ""
+tel        "+989369360466"
 fax        ""
 language   "Gilaki"
 territory  "Iran"
@@ -48,7 +48,8 @@ category "i18n:2012";LC_MEASUREMENT
 END LC_IDENTIFICATION
 
 LC_CTYPE
-copy "i18n"
+copy "fa_IR"
+END LC_CTYPE
 
 % Gilaki uses the alternate digits U+06F0..U+06F9
 outdigit <U06F0>..<U06F9>
@@ -195,40 +196,15 @@ reorder-end
 END LC_COLLATE
 
 LC_MONETARY
-int_curr_symbol   "IRR "
-currency_symbol   "<U0631><U06CC><U0627><U0644>"
-mon_decimal_point "<U066B>"
-mon_thousands_sep "<U066C>"
-mon_grouping      3
-positive_sign     ""
-negative_sign     "-"
-int_frac_digits   0
-frac_digits       0
-% The following positioning is based on Unicode 3.0 bidirectional algorithm,
-% with a "base direction" of right-to-left.
-p_cs_precedes     0
-p_sep_by_space    1
-n_cs_precedes     0
-n_sep_by_space    1
-p_sign_posn       1
-n_sign_posn       1
-% The following positioning is based on Unicode 3.0 bidirectional algorithm,
-% with a "base direction" of left-to-right.
-int_p_cs_precedes     0
-int_p_sep_by_space    1
-int_n_cs_precedes     0
-int_n_sep_by_space    1
-int_p_sign_posn       1
-int_n_sign_posn       1
+copy "fa_IR"
 END LC_MONETARY
 
 LC_NUMERIC
-decimal_point     "."
-thousands_sep     ","
-grouping          3
+copy "fa_IR"
 END LC_NUMERIC
 
 LC_TIME
+% copied from "fa_IR"
 % Alternative digits are used for Gilaki numerals in date and time. This is
 % a hack, until a new prefix is defined for alternative digits.
 alt_digits	"<U06F0><U06F0>";"<U06F0><U06F1>";/
@@ -281,8 +257,9 @@ alt_digits	"<U06F0><U06F0>";"<U06F0><U06F1>";/
 		"<U06F9><U06F4>";"<U06F9><U06F5>";/
 		"<U06F9><U06F6>";"<U06F9><U06F7>";/
 		"<U06F9><U06F8>";"<U06F9><U06F9>"
-% Gilaki doesn't have abbreviations for weekdays and month names, so
-% "abday" is the same as "day" and "abmon" is the same as "mon"
+%
+% Gilaki like Persian doesn't have abbreviations for weekdays and month names, so
+% "abday" is the same as "day" and "abmon" is the same as "mon".
 abday   "<U06CC><U06A9><U0634><U0645><U0628><U0647>";/
         "<U062F><U06CA><U0634><U0645><U0628><U0647>";/
         "<U0633><U06CA><U0634><U0645><U0628><U0647>";/
@@ -321,6 +298,7 @@ abmon   "<U0698><U0627><U0646><U0648><U06CC><U0647>";/
         "<U0627><U0643><U062A><U0628><U0631>";/
         "<U0646><U0648><U0627><U0645><U0628><U0631>";/
         "<U062F><U0633><U0627><U0645><U0628><U0631>"
+%
 % Gilaki does not have the 12-hour format
 am_pm   "";""https://answers.launchpad.net/launchpad/+question/694744
 t_fmt_ampm    ""
@@ -356,7 +334,7 @@ nostr   "<U0646><U0647>"
 END LC_MESSAGES
 
 LC_PAPER
-copy "i18n"
+copy "fa_IR"
 END LC_PAPER
 
 LC_NAME
@@ -369,7 +347,9 @@ name_fmt    "%d%t%s%t%g%t%m%t%f"
 END LC_NAME
 
 LC_ADDRESS
-postal_fmt    "%f%N%a%N%d%N%b%N%s %h %e %r%N%z %T%N%c%N"
+LC_ADDRESS
+% NOTE: Copied from "fa_IR", it should be checked and reconsidered if necessary:
+postal_fmt "%f%N%a%N%d%N%b%N%s %h %e %r%N%z %T%N%c%N"
 country_name   "<U0627><U064a><U0631><U0627><U0646>"
 country_ab2    "IR"
 country_ab3    "IRN"
@@ -377,18 +357,19 @@ country_num    364
 country_car    "IR"
 country_isbn   964
 lang_name      "<U06AF><U064A><U0644><U06A9><U064A>"
-lang_ab        "glk"
-lang_term      "glk"
-lang_lib       "glk"
+% Gilaki doesn't have iso-639-1
+lang_ab ""
+% iso-639-3
+lang_term "glk"
+% Gilaki doesn't have iso-639-2
+lang_lib ""
+
 END LC_ADDRESS
 
 LC_TELEPHONE
-tel_int_fmt    "<U202A>+%c %a %l<U202C>"
-tel_dom_fmt    "<U202A>%A<U2012>%l<U202C>"
-int_select     "00"
-int_prefix     "98"
+copy "fa_IR"
 END LC_TELEPHONE
 
 LC_MEASUREMENT
-copy "i18n"
+copy "fa_IR"
 END LC_MEASUREMENT
