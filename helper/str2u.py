@@ -3,6 +3,7 @@ def str2u(str: str) -> str:
     u = "".join(["<U%s>" % hex(ord(l))[2:].zfill(4) for l in str])
     u = u.replace("\\u", "<U")
     u = u.replace("", "")
+    u = u.upper()
     print(f'{u}')
     return u
 
@@ -17,7 +18,6 @@ def u2str(u: str) -> str:
 
 
 if __name__ == '__main__':
-    str2u('سلام')
-    u2str('<U0633><U0644><U0627><U0645>')
-
+    str2u('glk')
+    u2str('<U0070><U0073>')
 
